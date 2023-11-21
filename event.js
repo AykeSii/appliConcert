@@ -1,7 +1,7 @@
 // Utilisez la syntaxe async/await pour traiter de manière asynchrone la requête fetch
 try {
   const response = await fetch(
-    "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/evenements-publics-openagenda/records?limit=20&refine=keywords_fr%3A%22concert%22&refine=location_countrycode%3A%22FR%22&refine=lastdate_begin%3A%222024%22"
+    "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/evenements-publics-openagenda/records?limit=20&refine=keywords_fr%3A%22concert%22&refine=location_countrycode%3A%22FR%22&refine=lastdate_begin%3A%222023%22"
   );
 
   // Vérifiez si la requête a réussi (status 200-299)
