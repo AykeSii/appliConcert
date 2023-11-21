@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
-	width: auto;
-	overflow: auto;
-	padding: 16px;
-	font-family: 'Montserrat', sans-serif;
+	padding: 0;
+	margin: 0;
 	position: relative;
+	font-family: 'Montserrat', sans-serif;
 }
+
+* {
+	box-sizing: border-box;
+  }
 
 header {
 	display: flex;
@@ -32,12 +35,13 @@ main {
 }
 
 .filtres {
-	border-radius: 4px;
-	box-shadow: 0px 0px 4px gray;
-	margin: 8px;
-	padding: 8px;
-	min-width: 300px;
-	min-height: 400px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px gray;
+    margin: 8px;
+    padding: 8px;
+    min-width: min-content;
+    min-height: 400px;
+	overflow-x: auto;
 }
 .filtres h3 {
 	text-align: center;
@@ -52,13 +56,13 @@ main {
 }
 .fiches article {
 	border: 1px solid black;
-	padding: 4px;
+	padding: 0;
 }
 .fiches article img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 200px;
+	max-width: 300px;
 }
 .fiches article p {
 	margin-top: 4px;

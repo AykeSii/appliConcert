@@ -17,7 +17,6 @@ const response = await fetch(
   totalCountElement.innerText = totalCount;
   const sectionFiches = document.querySelector(".fiches")
   sectionFiches.appendChild(totalCountElement);
-  console.log(totalCountElement)
 
   for (let i = 0; i < data.results.length; i++) {
     const ficheEvenement = document.createElement("article")
@@ -30,8 +29,6 @@ const response = await fetch(
     const imageEvenement = document.createElement("img")
     imageEvenement.src = data.results[i].originalimage;
     ficheEvenement.appendChild(imageEvenement);
-    console.log("image", data.results[i].originalimage);
-
 
     const descriptionEvenement = document.createElement("p")
     descriptionEvenement.innerText = data.results[i].description_fr;
