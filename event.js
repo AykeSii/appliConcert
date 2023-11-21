@@ -32,7 +32,24 @@ const response = await fetch(
     ficheEvenement.appendChild(imageEvenement);
     console.log("image", data.results[i].originalimage);
 
-    const descriptionCourte = document.createElement("p");
-    const dateHeur = document.createElement("p");
 
+    const descriptionEvenement = document.createElement("p")
+    descriptionEvenement.innerText = data.results[i].description_fr;
+    ficheEvenement.appendChild(descriptionEvenement);
+
+    const dateHeure = document.createElement("p")
+    dateHeure.innerText = data.results[i].daterange_fr;
+    ficheEvenement.appendChild(dateHeure);
+
+    const keyWords = document.createElement("p")
+    keyWords.innerText = data.results[i].keywords_fr;
+    ficheEvenement.appendChild(keyWords);
+
+    const locationAdress = document.createElement("p")
+    locationAdress.innerText = data.results[i].location_address;
+    ficheEvenement.appendChild(locationAdress);
+
+    const locationRegion = document.createElement("p")
+    locationRegion.innerText = data.results[i].location_region;
+    ficheEvenement.appendChild(locationRegion);
   }
